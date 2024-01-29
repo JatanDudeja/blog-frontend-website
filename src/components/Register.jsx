@@ -30,7 +30,7 @@ function Register() {
   return (
     <div className="">
       <h2 className="mt-4" style={{ textAlign: "center", marginTop: 50 }}>
-        Login
+        Register
       </h2>
       <form
         className="max-w-sm mx-auto bg-slate-900 rounded-md"

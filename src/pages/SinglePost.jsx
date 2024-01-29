@@ -9,7 +9,7 @@ function SinglePost() {
   useEffect(() => {
     const handleSinglePost = async () => {
       const response = await fetch(
-        `http://blog-api.onrender.com/api/v1/blogs/post/${params.id}`,
+        `http://localhost:8000/api/v1/blogs/post/${params.id}`,
         {
           credentials: "include",
         }
@@ -27,7 +27,7 @@ function SinglePost() {
   const handleDeleteClick = async () => {
     try {
       const response = await fetch(
-        `http://blog-api.onrender.com/api/v1/blogs/post/${params.id}`,
+        `http://localhost:8000/api/v1/blogs/delete-post/${params.id}`,
         {
           method: "DELETE",
           credentials: "include",
