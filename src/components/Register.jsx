@@ -45,7 +45,6 @@ function Register() {
             Your Username
           </label>
           <input
-            // type="input"
             id="username"
             onChange={(e) => setRegisterDetails((prevDetails) => ({ ...prevDetails, username: e.target.value }))}
             value={registerDetails.username}
