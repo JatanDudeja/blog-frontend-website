@@ -8,7 +8,7 @@ const Navbar = () => {
   const {isLoggedIn, setIsLoggedIn} = useContext(UserContext)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/users/getCurrentUser", {
+    fetch("http://blog-api.vercel/api/v1/users/getCurrentUser", {
       credentials: "include",
     }).then((response) =>
       response.json().then((userInfo) => {

@@ -14,7 +14,7 @@ export default function EditPost() {
   useEffect(() => {
     const handleSinglePost = async () => {
       const response = await fetch(
-        `http://localhost:8000/api/v1/blogs/post/${params.id}`,
+        `http://blog-api.onrender.com/api/v1/blogs/post/${params.id}`,
         {
           credentials: "include",
         }
@@ -39,7 +39,7 @@ console.log(title, summary, content,);
       console.log(">>>",data)
       e.preventDefault();
       const response = await fetch(
-        `http://localhost:8000/api/v1/blogs/edit-post/${params.id}`,
+        `http://blog-api.onrender.com/api/v1/blogs/edit-post/${params.id}`,
         {
             method:"PATCH",
             credentials:"include",

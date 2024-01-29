@@ -3,7 +3,7 @@ const createPostAPI = async (bodyData) => {
     console.log(">>>", bodyData);
 
     const response = await fetch(
-      "http://localhost:8000/api/v1/blogs/create-post",
+      "http://blog-api.onrender.com/api/v1/blogs/create-post",
       {
         method: "POST",
         body: bodyData,
