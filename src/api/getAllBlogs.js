@@ -1,6 +1,6 @@
 const getAllBlogs = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/v1/blogs/allBlogs");
+      const response = await fetch("https://bloggers-api-64w8.onrender.com/api/v1/blogs/allBlogs");
   
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

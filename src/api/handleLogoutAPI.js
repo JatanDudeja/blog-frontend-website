@@ -1,6 +1,6 @@
 const handleLogoutAPI = async () => {
   const response = await fetch(
-    "http://localhost:8000/api/v1/users/logout",
+    "https://bloggers-api-64w8.onrender.com/api/v1/users/logout",
     {
       method: "POST",
       credentials: "include",
