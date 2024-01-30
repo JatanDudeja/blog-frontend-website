@@ -12,7 +12,7 @@ const Navbar = () => {
     fetch("http://localhost:8000/api/v1/users/getCurrentUser", {
       credentials: "include",
     }).then((response) =>
-      response.json().then((userInfo) => {
+    response.json().then((userInfo) => {
         setIsLoggedIn(true);
       })
     );
